@@ -100,15 +100,15 @@ justify-content: flex-start;
     color: var(--accent-color);
 }
 
-.contacts {
+.contacts-list {
     display: flex;
     margin-left: auto;
 }
 
-.contacts .contacts-item + .contacts-item {
+.contacts-list .contacts-item + .contacts-item {
     margin-left: 37px;
 }
-.contacts a {
+.contacts-list a {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -120,10 +120,39 @@ justify-content: flex-start;
     letter-spacing: 0.02em;
 }
 
-.contacts a:hover, .contacts a:focus {
+.contacts-list a:hover, .contacts a:focus {
 color:var(--accent-color);
 }
 
+.contacts-list {
+    display: flex;
+    color: var(--primary-text-color);
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+}
+
+.mail {
+    margin-right: 30px;
+}
+.header-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+.mobile {
+    width: 10px;
+    height: 16px;
+}
+
+.header-icon:hover, .header-icon:focus {
+    fill: var(--accent-color);
+}
 /* -------------------Hero------------------- */
 
 .hero {
@@ -358,6 +387,7 @@ color: var(--title-text-color);
 
 .client-icon-box:hover {
     color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 
@@ -368,6 +398,9 @@ color: var(--title-text-color);
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--first-background-color);
+}
+.footer-item {
+    padding-left: 70px;
 }
 .footer-logo {
     display: inline-block;
@@ -383,17 +416,69 @@ color: var(--title-text-color);
 .footer-list :not(:last-child) {
     margin-bottom: 9px;
 }
+
 .address {
 font-style: normal;
 font-size: 14px;
 line-height: calc(24/14);
 letter-spacing: 0.03em;
 }
+
 .footer-address {
 color: #FFFFFF;
 }
+
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+footer .container {
+    display: flex;
+}
+
+.footer-links {
+    display: flex;
+    width: 206px;
+    justify-content:space-between;
+}
+
+.footer-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.footer-icon-box:hover,
+.footer-icon-box:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    fill: currentColor;
 }
 
 /* -------------------Portfolio------------------- */

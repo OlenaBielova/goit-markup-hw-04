@@ -39,15 +39,15 @@ h1, h2, h3, h4,p {
 width: 1600px;
 margin: auto;
 }
-/* Page-header */
+/* -------------------Page-header------------------- */
 header {
     border-bottom: 1px solid #ECECEC;
 }
-/* Main */
+/* -------------------Main------------------- */
 main {
     
 }
-/* Header */
+/* -------------------Header------------------- */
 
 .nav, .main-nav {
 display: flex;
@@ -55,7 +55,7 @@ align-items: center;
 justify-content: flex-start;
 }
 
-/* Logo */
+/* -------------------Logo------------------- */
 .logo {
     display: block;
     padding-top: 24px;
@@ -124,7 +124,7 @@ justify-content: flex-start;
 color:var(--accent-color);
 }
 
-/* Hero */
+/* -------------------Hero------------------- */
 
 .hero {
     max-width: 1600px;
@@ -165,14 +165,14 @@ color:var(--accent-color);
     border-radius: 4px;
 }
 
-/* Overlay */
+/* -------------------Overlay------------------- */
 .overlay {
     max-width: 1600px;
     height: 600px;
 
 }
 
-/* Section */
+/* -------------------Section------------------- */
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -187,7 +187,8 @@ color:var(--accent-color);
     color: var(--title-text-color);
 }
 
-/* Особенности */
+
+/* -------------------Features------------------- */
 
 .visually-hidden {
     position: absolute;
@@ -205,6 +206,7 @@ color:var(--accent-color);
 .features-list {
     display: flex;
 }
+
 .features-list .item {
     width: 270px;
     margin-right: 30px;
@@ -229,7 +231,20 @@ color:var(--accent-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
+.feature-icon-box {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+}
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    
+}
 /* Work examples */
 .example-list {
     display: flex;
@@ -247,7 +262,7 @@ color:var(--accent-color);
     margin-right: 0
 }
 
-/* Наша команда */
+/* -------------------Team------------------- */
 .team {
     background-color: var(--second-background-color);
 }
@@ -279,6 +294,7 @@ color: var(--title-text-color);
 }
 
 .team-role {
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -287,7 +303,37 @@ color: var(--title-text-color);
     color: var(--primary-text-color);
 }
 
-/* Footer */
+.team-links {
+    width: 206px;
+    margin-left: 32px;
+    margin-right: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.team-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+}
+.team-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.team-icon-box:hover {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.team-icon:hover {
+    fill: currentColor;
+}
+
+/* -------------------Footer------------------- */
 
 .footer {
     padding-top: 60px;
@@ -321,7 +367,7 @@ color: #FFFFFF;
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* Portfolio */
+/* -------------------Portfolio------------------- */
 .portfolio-nav {
     display: flex;
     justify-content: center;

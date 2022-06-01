@@ -28,7 +28,7 @@ h1, h2, h3, h4,p {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -310,6 +310,7 @@ color: var(--title-text-color);
     display: flex;
     justify-content: space-between;
 }
+
 .team-icon-box {
     width: 44px;
     height: 44px;
@@ -324,7 +325,7 @@ color: var(--title-text-color);
     height: 20px;
     fill: currentColor;
 }
-.team-icon-box:hover {
+.team-icon-box:hover, .team-icon-box:focus {
     background-color: var(--accent-color);
     color: #FFFFFF;
     cursor: pointer;
@@ -332,6 +333,34 @@ color: var(--title-text-color);
 .team-icon:hover {
     fill: currentColor;
 }
+/* -------------------Footer------------------- */
+.clients-list {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+}
+
+.client-icon-box {
+    min-width: 170px;
+    height: 92px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+.client-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+.client-icon-box:hover {
+    color: var(--accent-color);
+}
+
+
 
 /* -------------------Footer------------------- */
 
@@ -404,7 +433,6 @@ cursor: pointer;
 
 .portfolio-list {
     display: flex;
-
     flex-wrap: wrap;
     margin: -15px;
 }
@@ -419,9 +447,7 @@ cursor: pointer;
 .portfolio-item {
     margin: 15px;
 }
-.portfolio-item:nth-child(3n) {
-    margin-right: 0;
-}
+
 
 .portfolio-item >.item {
     padding: 20px 24px;
